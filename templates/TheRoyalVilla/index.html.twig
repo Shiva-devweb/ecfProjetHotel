@@ -1,20 +1,145 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nos Hôtels{% endblock %}
+{% block title %}The Royal Villa{% endblock %}
 
 {% block body %}
+
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+      .container-fluid {
+		margin: 0px;
+        padding: 0px;
+        
+	}
+
+	.image-back {
+		position: absolute;
+        height: 750px;
+        margin-bottom: 30px;
+        display: flex;
+	}
+
+	.text-image {
+		position: relative;
+		font-size: 45px;
+		font-weight: bold; 
+		font-family: source_serif_pro;
+		display: inline;
+        
+		 
+	}
+	.text-image p {
+        
+		font-family: source_serif_pro;
+        text-align: center;
+		margin: 0px 700px 350px 700px ;
+        border: hidden;
+        background-color: #ffffffB2;
+		color: #40505d;
+	}
+	h2 {
+		margin: 20px 10px;
+		font-family: source_serif_pro;
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+		color: #6c757d;
+	}
+    .presentation {
+        padding: 50px;
+        margin: 20px;
+    }
+	.description {
+		margin:2px 200px 2px 200px;
+		padding: 30px;
+		font-family: source_serif_pro;
+		font-size: 20px;
+		color: #707070;
+		text-align: center;
+	}
+	.card {
+		margin: 50px 100px 50px 150px;
+		padding: 30px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #707070;
+		box-shadow: 10px;
+		background-color:#E0dbca;
+		text-align: center;
+		width: auto;
+		height: 650px;
+	}
+	.label {
+		flex: 1 ;
+	}
+
+	.label2 {
+		flex: 1 ;
+	}
+
+	.btn {
+		background-color: #707070;
+		border-color: #253238;
+	}
+	.card-title h5 {
+		font-family: script-mt-bold;
+		font-weight: 150px
+	}
+    /* .thumbnail {
+        height: 50px;
+        width: 50%;
+    } */
+
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="container-fluid">
+    <div class="row">
+	<div class="image-back">
+	<img class= "back" src="/images/rvmain.jpg" alt=""/>
+	</div>
+	<div class= "text-image">
+	<p>The Royal Villa</p>
+	</div>
+    <div class= "presentation">
+	<h2>Nos établissements</h2>
+	<p class= "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at purus elit. Suspendisse turpis diam, mattis vel commodo in, viverra sit amet eros. </p>
+    </div>
+    </div>
+	<div class="row">
+	<div class="label"> 
+		
+		<div class="col-6 col-12">
+		<div class="card">
+			<img src="/images/trv/trv1.jpeg" class="card-img-top" alt="...">
+            {# <img class= "thumbnail" width="150" height="150" src="/images/trv/trv2.jpeg>
+            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv3.jpg>
+            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv4.jpg>
+            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv5.jpg>
+            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv6.jpg> #}
+			<div class="card-body">
+				<h5 class="card-title">La suite Bradd Pitt</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/apps/projetHotel/src/Controller/HotelController.php'|file_link(0) }}">src/Controller/HotelController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/apps/projetHotel/templates/hotel/index.html.twig'|file_link(0) }}">templates/hotel/index.html.twig</a></code></li>
-    </ul>
+		</div>
+	</div>
+	<div class="label2"> 
+		<div class="col-6 col-12">
+		<div class="card" >
+			<img src="/images/rvsuit2.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</div>
+
 </div>
+
 {% endblock %}
