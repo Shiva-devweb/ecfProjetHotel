@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La suite Brad Pitt{% endblock %}
+
+{% block body %}
+<style>
+   
+	.image-back {
+		position: absolute;
+        margin: 30px 0px 30px 0px; 
+        display: flex;
+        padding: 0px;
+        
+	}
+      
+	.text-image {
+		position: relative;
+		font-size: 45px;
+		font-weight: bold; 
+		font-family: source_serif_pro;
+		display: inline;
+        
+	 
+	}
+	.text-image p {
+        
+		font-family: source_serif_pro;
+        text-align: center;
+		margin: 0px 700px 350px 700px ;
+        border: hidden;
+        background-color: rgb(255, 255, 255, 0.5);
+		color: #40505d;
+	}
+   
+</style>
+<div class="container">
+    <div class="row">
+	<div class="image-back">
+	<img class= "back" src="/images/rvsuit1lg.jpg" width="100%" alt=""/>
+	</div>
+	<div class= "text-image">
+	<p>La suite Brad Pitt</p>
+	</div>
+</div>
+{% endblock %}

@@ -34,7 +34,7 @@
         text-align: center;
 		margin: 0px 700px 350px 700px ;
         border: hidden;
-        background-color: #ffffffB2;
+        background-color: rgb(255, 255, 255, 0.5);
 		color: #40505d;
 	}
 	h2 {
@@ -59,7 +59,6 @@
 	}
 	.card {
 		margin: 50px 100px 50px 150px;
-		padding: 30px;
 		border-style: solid;
 		border-width: 2px;
 		border-color: #707070;
@@ -67,7 +66,8 @@
 		background-color:#E0dbca;
 		text-align: center;
 		width: auto;
-		height: 650px;
+		height: auto;
+		
 	}
 	.label {
 		flex: 1 ;
@@ -81,14 +81,20 @@
 		background-color: #707070;
 		border-color: #253238;
 	}
-	.card-title h5 {
-		font-family: script-mt-bold;
-		font-weight: 150px
+	.card-title {
+		font-family: source_serif_pro;
+		font-weight: 150px;
+		background-color: rgb(255, 255, 255, 0.5);
+		color: #0e2e3d;
+		font-size: 30px;
+		position: relative;
 	}
-    /* .thumbnail {
-        height: 50px;
-        width: 50%;
-    } */
+	.price{
+		font-weight: bold;
+	}
+    .thumbnail {
+		display: inline-block;
+    }
 
 </style>
 
@@ -110,16 +116,20 @@
 		
 		<div class="col-6 col-12">
 		<div class="card">
-			<img src="/images/trv/trv1.jpeg" class="card-img-top" alt="...">
-            {# <img class= "thumbnail" width="150" height="150" src="/images/trv/trv2.jpeg>
-            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv3.jpg>
-            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv4.jpg>
-            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv5.jpg>
-            <img class= "thumbnail" width="150" height="150"  src="/images/trv/trv6.jpg> #}
+			<h5 class="card-title">La suite Brad Pitt</h5>
+			<div class="img-card">
+				<img src="/images/trv/trv1.jpeg" class="card-img-top" alt="...">
+				<a href="/images/trv/trv2.jpeg"><img class= "thumbnail" width="110" height="80" src="/images/trv/trv2.jpeg"></a>
+				<a href="/images/trv/trv3.jpg"><img class= "thumbnail" width="110" height="80"  src="/images/trv/trv3.jpg"></a>
+				<a href="/images/trv/trv4.jpg"><img class= "thumbnail" width="110" height="80"  src="/images/trv/trv4.jpg"></a>
+				<a href="/images/trv/trv5.jpg"><img class= "thumbnail" width="110" height="80"  src="/images/trv/trv5.jpg"></a>
+				<a href="/images/trv/trv6.jpg"><img class= "thumbnail" width="110" height="80"  src="/images/trv/trv6.jpg"></a>
+				<a href="/images/trv/trv7.jpg"><img class= "thumbnail" width="110" height="80"  src="/images/trv/trv7.jpg"></a>
+			</div>
 			<div class="card-body">
-				<h5 class="card-title">La suite Bradd Pitt</h5>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+				<p class="price"> 890€ la nuit</p>
+				<a href="/rvsuit1" class="btn btn-primary">En savoir plus</a>
 			</div>
 		</div>
 
@@ -128,11 +138,13 @@
 	<div class="label2"> 
 		<div class="col-6 col-12">
 		<div class="card" >
+			<h5 class="card-title">Card title</h5>
 			<img src="/images/rvsuit2.jpg" class="card-img-top" alt="...">
 			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
+				
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+				<p class="price"> 890€ la nuit</p>
+				<a href="#" class="btn btn-primary">En savoir plus</a>
 			</div>
 		</div>
 
